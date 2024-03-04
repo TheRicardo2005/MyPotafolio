@@ -1,0 +1,135 @@
+
+.Background-apis{
+    width: 100%;
+    height: 100vh;
+    background-color: #D5DBDB ;
+}
+
+.conatiner-cards-api {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.conatiner-cards-api::before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem 0rem 0rem 1rem;
+    top: -2rem;
+    right: 27rem;
+    background-color: #2A2E32;
+    overflow: hidden;
+}
+
+.conatiner-cards-api main {
+    width: 65rem;
+    height: 30rem;
+    background-color: #2A2E32;
+    border-radius: 1rem 0rem 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(max-width:1290px){
+    .conatiner-cards-api {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5rem;
+        padding-left: 2rem;
+        position: relative;
+    }
+
+    .conatiner-cards-api::before {
+        content: "";
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 10rem 0rem 0rem 1rem;
+        top: -2rem;
+        right: 24rem;
+        background-color: #2A2E32;
+        overflow: hidden;
+    }
+
+}
+
+@media(max-width:840px){
+    .conatiner-cards-api {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        position: relative;
+    }
+}
+
+@media(max-width:725px){
+    .conatiner-cards-api main {
+        width: 65rem;
+        height: 25rem;
+        background-color: #2A2E32;
+        border-radius: 1rem 0rem 1rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 1rem;
+        border: 1px solid #000;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .conatiner-cards-api::before {
+        content: "";
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 10rem 0rem 0rem 1rem;
+        top: -2rem;
+        right: 24rem;
+        background-color: #2A2E32;
+        overflow: hidden;
+        display: none;
+    }
+}
+
+@media(max-width:495px){
+    .Background-apis {
+        width: 100%;
+        height: 100vh;
+        background-color: #2A2E32;
+    }
+}
+
+@media(max-width:520px){
+    .conatiner-cards-api main {
+        width: 65rem;
+        height: 30rem;
+        background-color: #2A2E32;
+        border-radius: 1rem 0rem 1rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:380px){
+    .box {
+        width: 8rem;
+        height: 10rem;
+        border-radius: 1rem;
+        border: 1px solid #000;
+        position: relative;
+        cursor: pointer;
+    }
+}

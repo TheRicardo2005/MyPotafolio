@@ -1,0 +1,147 @@
+.Footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #262626;
+}
+
+.icons{
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.icons::after{
+    content: "";
+    width: 18rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 1.8rem;
+    right: -19rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.icons::before{
+    content: "";
+    width: 18rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 1.8rem;
+    left: -19rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.icons button{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #262626;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.icons button:hover{
+    scale: 1.1;
+}
+
+.icons button img{
+    width: 4rem;
+}
+
+.copyrigth-content{
+    margin-top: 1rem;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1070px){
+    .icons::after {
+        content: "";
+        width: 12rem;
+        height: 0.3rem;
+        position: absolute;
+        top: 1.8rem;
+        right: -12rem;
+        background-color: aliceblue;
+        border-radius: 50%;
+    }
+
+    .icons::before {
+        content: "";
+        width: 12rem;
+        height: 0.3rem;
+        position: absolute;
+        top: 1.8rem;
+        left: -12rem;
+        background-color: aliceblue;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:810px){
+    .icons::after {
+        content: "";
+        width: 8rem;
+        height: 0.3rem;
+        position: absolute;
+        top: 1.8rem;
+        right: -8rem;
+        background-color: aliceblue;
+        border-radius: 50%;
+    }
+
+    .icons::before {
+        content: "";
+        width: 8rem;
+        height: 0.3rem;
+        position: absolute;
+        top: 1.8rem;
+        left: -8rem;
+        background-color: aliceblue;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:660px){
+    .icons::after {
+        content: "";
+        width: 8rem;
+        height: 0.3rem;
+        position: absolute;
+        top: 1.8rem;
+        right: -8rem;
+        background-color: aliceblue;
+        border-radius: 50%;
+        display: none;
+    }
+
+    .icons::before {
+        content: "";
+        width: 8rem;
+        height: 0.3rem;
+        position: absolute;
+        top: 1.8rem;
+        left: -8rem;
+        background-color: aliceblue;
+        border-radius: 50%;
+        display: none;
+    }
+}
+
+@media (max-width:400px){
+    .icons {
+        width: 15rem;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .icons button img {
+        width: 3rem;
+    }
+}

@@ -1,0 +1,70 @@
+.box{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+    color: #FFF;
+    font-size: 1.3rem;
+    transition: all 1s ease;
+    opacity: 0;
+    background-color: #172431c5;
+    border-radius: 1rem;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    user-select: none;
+  }
+  
+  .box:hover .content {
+    opacity: 1;
+    transform: scaleY(1); 
+  }
+  
+
+/*Fondos*/
+#rick-y-morty{
+    background-image:url('../../assets/IMG/Fondo/Fondo-Card-Rick-Morty.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+
+#pokemon{
+    background-image:url('../../assets/IMG/Fondo/Fondo-card-Pokemon.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width:825px){
+    .box {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1rem;
+        border: 1px solid #000;
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:690px){
+    .box {
+        width: 10rem;
+        height: 12rem;
+        border-radius: 1rem;
+        border: 1px solid #000;
+        position: relative;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,92 @@
+.container-card-pokemon {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 15rem;
+    height: 16rem;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+}
+
+.card-info {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+    color: #f7ba2b;
+
+    img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+.card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.container-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tipe {
+        margin: 2rem 1rem 0rem 1rem;
+        padding: 0.5rem;
+        width: 5rem;
+        height: 2rem;
+        background-color: azure;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 0.9rem;
+    }
+}
+
+/*Hover*/
+
+.card:hover .card-info {
+    transition: color 1s;
+}

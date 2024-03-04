@@ -1,0 +1,224 @@
+.aboutMe{
+    padding-top: 5rem;
+    height: 100%;
+    background-image: url('../../assets//IMG/Fondo/galaxy.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente (negro en este caso) */
+    color: #FFF;
+}
+
+.container-about-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-text{
+    max-width: 40rem;
+    text-align: justify;
+    margin: 1rem;
+    position: relative;
+}
+
+.container-text h1::before{
+    content: "";
+    background-color: #304cfd;
+    border-radius: 0.5rem;
+    height: 5px;
+    position: absolute;
+    top: 2.5rem;
+    bottom: 0rem;
+    left: 0;
+    width: 6rem;
+    z-index: 1;
+}
+
+.container-text h1::after{
+    content: "";
+    background-color: #fd3030;
+    border-radius: 0.5rem;
+    height: 5px;
+    position: absolute;
+    top: 2.5rem;
+    bottom: 0rem;
+    left: 0;
+    width: 2rem;
+    z-index: 1;
+}
+
+.container-text p{
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+
+.container-img-yo{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3rem;
+    border-radius: 71% 29% 21% 79% / 25% 24% 76% 75% ;
+    background-color: aqua;
+    background-image: url('../../assets/IMG/Ricardo/ricardo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+    animation: flotar 4s infinite;
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.container-img-yo:hover{
+    scale: 1.1;
+}
+
+@media (max-width:1000px){
+    .container-text {
+        max-width: 30rem;
+        min-width: 10rem;
+        text-align: justify;
+        margin: 1rem;
+    }
+}
+
+@media (max-width:800px){
+    .container-text {
+        max-width: 20rem;
+        text-align: justify;
+        margin: 1rem;
+    }
+}
+
+@media (max-width:680px){
+    .container-text {
+        max-width: 15rem;
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    .container-text h1{
+        font-size: 1.5rem;
+    }
+
+    .container-text p {
+        margin-top: 1rem;
+        line-height: 1.4;
+        font-size: 0.8rem;
+    }
+
+    .container-img-yo {
+        width: 14rem;
+        height: 14rem;
+        margin-top: 3rem;
+        border-radius: 71% 29% 21% 79% / 25% 24% 76% 75%;
+        background-color: aqua;
+        background-image: url(/src/assets/IMG/Ricardo/ricardo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 2s ease;
+        animation: flotar 4s infinite;
+    }
+
+    .container-text h1::before {
+        content: "";
+        background-color: #304cfd;
+        border-radius: 0.5rem;
+        height: 5px;
+        position: absolute;
+        top: 2rem;
+        bottom: 0rem;
+        left: 0;
+        width: 6rem;
+        z-index: 1;
+    }
+
+    .container-text h1::after {
+        content: "";
+        background-color: #fd3030;
+        border-radius: 0.5rem;
+        height: 5px;
+        position: absolute;
+        top: 2rem;
+        bottom: 0rem;
+        left: 0;
+        width: 2rem;
+        z-index: 1;
+    }
+}
+
+@media (max-width:540px){
+    .container-about-img {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container-img-yo {
+        width: 16rem;
+        height: 16rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        border-radius: 71% 29% 21% 79% / 25% 24% 76% 75%;
+        background-color: aqua;
+        background-image: url(/src/assets/IMG/Ricardo/ricardo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 2s ease;
+        animation: flotar 4s infinite;
+    }
+
+    .container-text {
+        max-width: 23rem;
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    .container-text p {
+        margin-top: 1rem;
+        line-height: 1.4;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:420px){
+    .container-text {
+        max-width: 15rem;
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    .container-text p {
+        margin-top: 1rem;
+        line-height: 1.4;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:300px){
+    .container-img-yo {
+        width: 14rem;
+        height: 14rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        border-radius: 71% 29% 21% 79% / 25% 24% 76% 75%;
+        background-color: aqua;
+        background-image: url(/src/assets/IMG/Ricardo/ricardo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 2s ease;
+        animation: flotar 4s infinite;
+    }
+}
